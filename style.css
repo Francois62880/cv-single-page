@@ -449,3 +449,12 @@
 }
 
 /******* contact ***********************/
+
+/******* Mode portable ***********************/
+@media screen and (max-width: 640px) {
+    .wh{
+        color:#efd807;
+        text-shadow: 1px 1px 2px #000;
+        margin-top: 25px;
+    }
+  }

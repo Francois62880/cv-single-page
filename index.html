@@ -24,37 +24,41 @@
 
 <body>
     <div class="container-fluid">
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" id="nav1" href="index.html">François Cousin</a>
-            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon">
-                    <i class="fa fa-navicon"></i>
-                </span>
+        <div class="menu">
+            <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" id="nav1" href="index.html">François Cousin</a>
+                <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa fa-navicon"></i>
+                    </span>
 
-            </button>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav" id="nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#presentation">Présentation<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#compétences">Compétences</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#hobbies">Hobbies</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav" id="nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#presentation">Présentation<span
+                                    class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#compétences">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hobbies">Hobbies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div id="presentation"></div>
         <div class="row">
             <div class="col-lg-12">
                 <div class="jumbotron paral2 paralsec2">
@@ -93,7 +97,7 @@
         <!-- début présentation -->
         <div class="main_title_container">
             <div class="space30"></div>
-            <h2 class="section-title text-center" id="presentation">Qui suis-je ?</h2>
+            <h2 class="section-title text-center">Qui suis-je ?</h2>
             <p class="lead text-center">"Un homme passionné et investi."</p>
             <div class="space30"></div>
         </div>
@@ -176,16 +180,17 @@
                                 <div class="space30"></div>
                                 <h4>Un client satisfait du résutat final</h4>
                                 <p>C'est la plus belle des récompenses !</p>
+                                <div id="compétences"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
+           
 
             <!-- début compétences -->
             <!-- Progress Bars -->
-            <h2 class="text-center" id="compétences">Mes compétences</h2>
+            <h2 class="text-center">Mes compétences</h2>
             <div class="space30"></div>
             <div class="row diplome">
                 <div class="box">
@@ -347,11 +352,12 @@
                     <h2 class="section-title text-center">Mes débuts dans le developpement web</h2>
                     <p class="lead text-center">Voici un bref aperçu des travaux que j'ai pu réaliser au cours de ma
                         formation.</p>
+                        <div id="portfolio"></div>
                 </div>
             </div>
         </div>
         <div class="space30"></div>
-        <h2 class="text-center" id="portfolio">Portfolio</h2>
+        <h2 class="text-center">Portfolio</h2>
         <div class="space30"></div>
         <div class="row">
             <div class="offset-lg-1 col-lg-2">
@@ -386,6 +392,7 @@
                         <h5 class="card-title">La cuisine du monde</h5>
                         <p class="card-text">Réalisation d'un site responsive sur le thème de la cuisine avec
                             l'utilisation de bootstrap.</p>
+                            <div id="hobbies"></div>
                         <a href="https://francois62880.github.io/la-cuisine-du-monde/" class="btn btn-primary"
                             target="_blank">Let's
                             Go</a>
@@ -395,7 +402,7 @@
         </div>
         <!-- début hobbies -->
         <div class="space30"></div>
-        <h2 class="text-center" id="hobbies">hobbies</h2>
+        <h2 class="text-center">Hobbies</h2>
         <div class="space30"></div>
         <div class="row hobby">
             <div class="swiper-container">
@@ -467,15 +474,16 @@
                                     famille et mes amis se régalent avec mes pates aux aubergines, mon welsh, mes
                                     risottos poulet/chorizo ou saumon/poireau ou
                                     encore avec ma carbonade flamande. </P>
-                            </div>
+                                </div>
                         </div>
                     </div>
                 </div>
+                <div id="contact"></div>
             </div>
         </div>
         <!-- Début contact -->
         <div class="space30"></div>
-        <h2 class="text-center" id="contact">Contactez_moi</h2>
+        <h2 class="text-center">Contactez_moi</h2>
         <div class="space30"></div>
         <div class="row">
             <div class="offset-1 col-10 offset-lg-1 col-lg-3">
