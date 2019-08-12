@@ -14,26 +14,17 @@
     justify-content: space-evenly;
 }
 #nav>li>a{
-    color: black;
     font-size: 1.5em;
 }
 #navc>li>a{
     font-size: 1.5em;
 }
 #nav1{
-    color: black;
     font-size: 1.5em;
 }
 #nav1c{
     font-size: 1.5em;
 }
-/* navbar fixe */
-.navbar.fixed{
-    position:fixed;
-    width: 100%;
-    top:0;
-    z-index:1000;
-  }
 /************ footer *********************************/
 #footer{
     border-top: 2px solid black;
