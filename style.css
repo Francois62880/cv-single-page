@@ -181,6 +181,10 @@
     clip-path: polygon(0 0, 100% 0, 0 0, 0 100%);
     transition: 1s;
 }
+.click
+{
+    display:none;
+}
 /* barre de progression */
 
 .main_title_container
@@ -452,9 +456,42 @@
 
 /******* Mode portable ***********************/
 @media screen and (max-width: 640px) {
+/*******card perso ***********************/
     .wh{
         color:#efd807;
         text-shadow: 1px 1px 2px #000;
         margin-top: 25px;
+    }
+/*******compétences ***********************/
+.click
+{
+    display: block;
+    text-align: center;
+}
+/*******portfolio ***********************/
+    .cfolio{
+        width: 350px;
+        height: 400PX;
+        }  
+/******* hobbies ***********************/
+    .chobby{
+        width: 300px;
+        height: 550PX;
+    }
+    .chobby .content{
+        width: 300px;
+        padding: 30px;
+        box-sizing: border-box;
+    }
+    .chobby .sliderText{
+        height: 200px;
+    }
+    .chobby .sliderText h3{
+        color: #fff;
+        font-size: 2em;
+        text-align: center;
+    }
+    .swiper-slide{
+        width: 300px;
     }
   }
