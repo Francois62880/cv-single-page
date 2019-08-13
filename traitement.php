@@ -21,11 +21,11 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
     }
   }
   
-  if (!isset($_POST['message'])) {
+  if (!isset($_POST['msg'])) {
     $nombreErreur++;
     $erreur4 = '<p>Il y a un problème avec la variable "message".</p>';
   } else {
-    if (empty($_POST['message'])) {
+    if (empty($_POST['msg'])) {
       $nombreErreur++;
       $erreur5 = '<p>Vous avez oublié de donner un message.</p>';
     }
@@ -44,24 +44,27 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
   if ($nombreErreur==0) { // S'il n'y a pas d'erreur
     // Récupération des variables et sécurisation des données
     $nom = htmlentities($_POST['nom']); // htmlentities() convertit des caractères "spéciaux" en équivalent HTML
-    $nom = htmlentities($_POST['prenom']);
-    $nom = htmlentities($_POST['sujet']);
+    $prenom = htmlentities($_POST['prenom']);
+    $sujet = htmlentities($_POST['sujet']);
     $email = htmlentities($_POST['email']);
-    $message = htmlentities($_POST['message']);
+    $msg = htmlentities($_POST['msg']);
     
     // Variables concernant l'email
     $destinataire = 'francois.cousin62880@gmail.com'; // Adresse email du webmaster
-    $sujet = 'Titre du message'; // Titre de l'email
+    $sujet = 'Nouveau contact'; // Titre de l'email
     $contenu = '<html><head><title>Titre du message</title></head><body>';
     $contenu .= '<p>Bonjour, vous avez reçu un message à partir de votre site web.</p>';
     $contenu .= '<p><strong>Nom</strong>: '.$nom.'</p>';
+    $contenu .= '<p><strong>Nom</strong>: '.$prenom.'</p>';
+    $contenu .= '<p><strong>Nom</strong>: '.$sujet.'</p>';
     $contenu .= '<p><strong>Email</strong>: '.$email.'</p>';
-    $contenu .= '<p><strong>Message</strong>: '.$message.'</p>';
+    $contenu .= '<p><strong>Message</strong>: '.$msg.'</p>';
     $contenu .= '</body></html>'; // Contenu du message de l'email
     
     // Pour envoyer un email HTML, l'en-tête Content-type doit être défini
     $headers = 'MIME-Version: 1.0'."\r\n";
-    $headers .= 'Content-type: text/html; charset=iso-8859-1'."\r\n";
+    $headers .= "Content-type: text/html; charset=\"/utf-8\"";
+    $headers .= "Content-transfert-Encoding:8bit";
     
     @mail($destinataire, $sujet, $contenu, $headers); // Fonction principale qui envoi l'email
     
