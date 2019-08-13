@@ -21,7 +21,7 @@
                         <h5 class="card-title">At Home Couvertures</h5>
                         <p class="card-text">Réalisation avec le Framework Symfony 4 d'un site d'application pour
                             l'entreprise At Home Couvertures à Bailleul.</p>
-                        <a href="https:athomecouvertures.com" class="btn btn-primary" target="_blank">Let's Go</a>
+                        <a href="http://www.athomecouvertures.com/" class="btn btn-primary" target="_blank">Let's Go</a>
                     </div>
                 </div>
             </div>
