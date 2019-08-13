@@ -35,5 +35,6 @@ $(document).ready(function() {
 	  el: '.swiper-pagination',
 	},
   });
+/************************* Contact ****************************************/
 
  
