@@ -2,7 +2,7 @@
         <div class="menu">
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
                 <a class="navbar-brand" id="nav1" href="index.php">François Cousin</a>
-                <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+                <button class="navbar-toggler bg-black" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon">

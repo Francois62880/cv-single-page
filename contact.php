@@ -72,8 +72,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
     
     $success = 'Message envoyé!'; // Afficher un message pour indiquer que le message a été envoyé
   } else { // S'il y a un moins une erreur
-    echo '<div style="border:1px solid #ff0000; padding:5px;">';
-    echo '<p style="color:#ff0000;">Désolé, il y a eu '.$nombreErreur.' erreur(s). Voici le détail des erreurs:</p>';
+    $error = 'Désolé, il y a eu '.$nombreErreur.' erreur(s). Voici le détail des erreurs:';
     if (isset($erreur1)) echo '<p>'.$erreur1.'</p>';
     if (isset($erreur2)) echo '<p>'.$erreur2.'</p>';
     if (isset($erreur3)) echo '<p>'.$erreur3.'</p>';
@@ -81,7 +80,6 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
     if (isset($erreur5)) echo '<p>'.$erreur5.'</p>';
 	if (isset($erreur6)) echo '<p>'.$erreur6.'</p>';
 	if (isset($erreur7)) echo '<p>'.$erreur7.'</p>';
-    echo '</div>';
   }
 }
 ?>
@@ -140,7 +138,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
                     <?php endif; ?>
                     <?php if ($error): ?>
                     <div class="alert alert-danger">
-                        Le magasin sera fermé
+                    <?= $error ?>
                     </div>
                     <?php endif; ?>
 
