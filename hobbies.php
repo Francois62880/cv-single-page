@@ -13,7 +13,7 @@
                             </div>
                             <div class="content">
                                 <P>Je ne suis pas né développeur. J'ai toujours côtoyé ce domaine sans vraiment m'y
-                                    lancer. Mais depuis peu, c'est devenu une évidence. Poussez par ma famille,
+                                    lancer. Mais depuis peu, c'est devenu une évidence. Poussé par ma famille,
                                     je me suis lancé dans une formation de développeur web et web mobile.
                                     Plus le temps passe, plus j'aime découvrir de nouvelles techniques ou de nouveaux
                                     langages de programmation.</P>

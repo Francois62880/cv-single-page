@@ -50,6 +50,20 @@
     text-shadow: 1px 1px 2px #000;
     margin-top: 250px;
 }
+.cp2
+{
+    text-align: center;
+    background-color: #fff;
+    padding-top: 5px;
+    height: 50px;
+}
+.cp
+{
+    text-align: center;
+    background-color: #fff;
+    padding-top: 5px;
+    height: 100px;
+}
 .paral2 {
     min-height: 400px;
     background-attachment: fixed;
@@ -57,7 +71,7 @@
     background-position: 50% 50%;
 	}
 .paralsec2 {
-	background-image: url("images/ordinateur.jpg");
+    background-image: url("images/ordinateur.jpg");
     }
 .boite
 {
@@ -182,6 +196,10 @@
     transition: 1s;
 }
 .click
+{
+    display:none;
+}
+.click1
 {
     display:none;
 }
@@ -391,6 +409,12 @@
     width: 300px;
     height: 400PX;
     }  
+.cp1{
+    text-align: center;
+    background-color: #fff;
+    padding-top: 5px;
+    height: 100px;
+    }
 /********** Hobbies ***************************/
 .hobby{
     margin: 0;
@@ -453,14 +477,45 @@
 }
 
 /******* contact ***********************/
+#footer
+{
+    height: 200px;
+}
+.ft{
+    text-align: center;
+    padding: 50px;
+}
 
 /******* Mode portable ***********************/
 @media screen and (max-width: 640px) {
 /*******card perso ***********************/
-    .wh{
+    .wh
+    {
         color:#efd807;
         text-shadow: 1px 1px 2px #000;
         margin-top: 25px;
+    }
+    .click1
+{
+    color:white;
+    display: block;
+    text-align: center;
+}
+/*******presentation ***********************/
+    .cp
+    {
+    text-align: center;
+    background-color: #fff;
+    padding-top: 5px;
+    height: 125px;
+    margin-bottom:30px;
+    }
+    .cp2
+    {
+    text-align: center;
+    background-color: #fff;
+    padding-top: 5px;
+    height: 100px;
     }
 /*******compétences ***********************/
 .click
@@ -469,10 +524,9 @@
     text-align: center;
 }
 /*******portfolio ***********************/
-    /* .cfolio{
-        width: 350px;
-        height: 400PX;
-        }   */
+.cp1{
+      height: 200px;
+    }
 /******* hobbies ***********************/
     .chobby{
         width: 300px;

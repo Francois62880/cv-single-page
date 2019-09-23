@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
   } else {
     if ($_POST['captcha']!=4) {
       $nombreErreur++;
-      $erreur7 = '<p>Désolé, le captcha anti-spam est erroné.</p>';
+      $erreur7 = '<p>Le captcha anti-spam est erroné.</p>';
     }
   }
   
@@ -58,7 +58,7 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
     $contenu .= '<p>Bonjour, vous avez reçu un message à partir de votre site web.</p>';
     $contenu .= '<p><strong>Nom</strong>: '.$nom.'</p>';
     $contenu .= '<p><strong>Nom</strong>: '.$prenom.'</p>';
-    $contenu .= '<p><strong>Nom</strong>: '.$sujet.'</p>';
+    $contenu .= '<p><strong>Sujet</strong>: '.$sujet.'</p>';
     $contenu .= '<p><strong>Email</strong>: '.$email.'</p>';
     $contenu .= '<p><strong>Message</strong>: '.$msg.'</p>';
     $contenu .= '</body></html>'; // Contenu du message de l'email
@@ -72,14 +72,14 @@ if ($_SERVER['REQUEST_METHOD']=='POST') {
     
     $success = 'Message envoyé!'; // Afficher un message pour indiquer que le message a été envoyé
   } else { // S'il y a un moins une erreur
-    $error = 'Désolé, il y a eu '.$nombreErreur.' erreur(s). Voici le détail des erreurs:';
+    $error = 'Désolé, il y a eu '.$nombreErreur.' erreur(s).' .$erreur7;
     if (isset($erreur1)) echo '<p>'.$erreur1.'</p>';
     if (isset($erreur2)) echo '<p>'.$erreur2.'</p>';
     if (isset($erreur3)) echo '<p>'.$erreur3.'</p>';
     if (isset($erreur4)) echo '<p>'.$erreur4.'</p>';
     if (isset($erreur5)) echo '<p>'.$erreur5.'</p>';
-	if (isset($erreur6)) echo '<p>'.$erreur6.'</p>';
-	if (isset($erreur7)) echo '<p>'.$erreur7.'</p>';
+	// if (isset($erreur6)) echo '<p>'.$erreur6.'</p>';
+	// if (isset($erreur7)) echo '<p>'.$erreur7.'</p>';
   }
 }
 ?>

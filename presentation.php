@@ -26,6 +26,7 @@
                             </div>
                         </div>
                     </div>
+                    <div class="click1">Click</div>
                 </div>
                 <div class="col-sm-3 col-xs-6 col-md-4 offset-lg-2 col-lg-6 section-title">
                     <h2 class="wh"> Développeur Web et Web Mobile</h2>
@@ -76,7 +77,9 @@
         <div class="col-lg-12">
             <div class="jumbotron paral paralsec">
                 <div class="space30"></div>
-                <h2 class="section-title text-center">Un projet réussi, c'est:</h2>
+                <div class="offset-lg-4 col-lg-4 cp2">
+                    <h2 class="section-title text-center">Un projet réussi, c'est:</h2>
+                </div>
                 <div class="space30"></div>
                 <div class="row">
                     <div class="col-sm-3 col-xs-6 col-md-4 col-lg-4" id="upper">
@@ -90,8 +93,10 @@
                             <div class="progress-value"> <i class="far fa-gem fa-2x"></i></div>
                         </div>
                         <div class="space30"></div>
-                        <h4>Une écoute attentive de votre besoin</h4>
-                        <p>Bien appréhender le besoin initial est primordial.</p>
+                        <div class="cp">
+                            <h5>Une écoute attentive de votre besoin</h5>
+                            <p>Bien appréhender le besoin initial est primordial.</p>
+                        </div>
                     </div>
                     <div class="col-sm-3 col-xs-6 col-md-4 col-lg-4" id="upper">
                         <div class="progress1 yellow">
@@ -104,8 +109,10 @@
                             <div class="progress-value"><i class="fas fa-paint-brush fa-2x"></i></div>
                         </div>
                         <div class="space30"></div>
-                        <h4>Une association de créativité et de rigueur</h4>
-                        <p>Et vous proposer un design soigné et un développement rigoureux.</p>
+                        <div class="cp">
+                            <h5>Une association de créativité et de rigueur</h5>
+                            <p>Et vous proposer un design soigné et un développement rigoureux.</p>
+                        </div>
                     </div>
                     <div class="col-sm-3 col-xs-6 col-md-4 col-lg-4" id="upper">
                         <div class="progress1 red">
@@ -118,8 +125,10 @@
                             <div class="progress-value"><i class="fas fa-gift fa-2x"></i></i></div>
                         </div>
                         <div class="space30"></div>
-                        <h4>Un client satisfait du résutat final</h4>
-                        <p>C'est la plus belle des récompenses !</p>
+                        <div class="cp">
+                            <h5>Un client satisfait du résutat final</h5>
+                            <p>C'est la plus belle des récompenses !</p>
+                        </div>
                         <div id="compétences"></div>
                     </div>
                 </div>
